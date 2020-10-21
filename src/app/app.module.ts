@@ -13,24 +13,26 @@ import { ProgresComponent } from './pages/progres/progres.component';
 import { Grafica1Component } from './pages/grafica1/grafica1.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesComponent } from './pages/pages.component';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NopagefoundComponent,
-    DashboardComponent,
-    BreadcrumbComponent,
-    SidebarComponent,
-    HeaderComponent,
-    ProgresComponent,
-    Grafica1Component,
-    PagesComponent
+    NopagefoundComponent
+    //DashboardComponent,
+    // BreadcrumbComponent,
+    // SidebarComponent,
+    // HeaderComponent
+    //ProgresComponent,
+    //Grafica1Component,
+    //PagesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PagesModule 
     
   ],
   providers: [],
