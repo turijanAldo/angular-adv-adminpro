@@ -14,12 +14,11 @@ import { Grafica1Component } from './pages/grafica1/grafica1.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesComponent } from './pages/pages.component';
 import { PagesModule } from './pages/pages.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    RegisterComponent,
     NopagefoundComponent
     //DashboardComponent,
     // BreadcrumbComponent,
@@ -32,8 +31,8 @@ import { PagesModule } from './pages/pages.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PagesModule 
-    
+    PagesModule, 
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
